@@ -18,3 +18,11 @@ class ChoiceCreateView(CreateView):
         choice.save()
         return redirect('poll_view', pk=poll.pk)
 
+
+class ChoiceUpdateView(UpdateView):
+    model = Choice
+    template_name = 'choices/update.html'
+    form_class = ChoiceForm
+
+    def get_success_url(self):
+        return reverse('poll_view', kwargs={'pk': self.object.poll.pk})

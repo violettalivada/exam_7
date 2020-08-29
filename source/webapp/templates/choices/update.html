@@ -1,0 +1,8 @@
+{% extends "partial/../base.html" %}
+{% block title %}Update{% endblock %}
+
+{% block content %}
+    <h1>Редактировать ответ</h1>
+    {% url "choice_update" pk=choice.pk as action_url %}
+    {% include 'partial/form.html' with button_text='Редактировать' action_url=action_url form_method='post' %}
+{% endblock %}
