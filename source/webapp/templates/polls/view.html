@@ -1,0 +1,24 @@
+{% extends "partial/../base.html" %}
+
+{% block title %}View{% endblock %}
+
+{% block content %}
+    <div class="card text-center m-4">
+      <div class="card-header">Опрос №{{ poll.pk }}</div>
+          <div class="card-body">
+            <h5 class="card-title">{{ poll.question }}</h5>
+          </div>
+    </div>
+    <h3>Варианты ответов:</h3>
+    {% for choice in choices %}
+        <div class="card text-center mt-4">
+          <div class="card-header">{{ choice.choice_text }}</div>
+              <div class="card-body">
+                <h5 class="card-title"></h5>
+              </div>
+        </div>
+
+    {% empty %}
+        <p>Нет вариантов</p>
+    {% endfor %}
+{% endblock %}

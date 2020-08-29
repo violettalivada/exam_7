@@ -15,7 +15,7 @@ class Poll(models.Model):
 
 class Choice(models.Model):
     choice_text = models.TextField(max_length=300, null=True, blank=True, verbose_name='Вариант ответа')
-    poll = models.ForeignKey('webapp.Poll', related_name='polls', on_delete=models.CASCADE,
+    poll = models.ForeignKey('webapp.Poll', related_name='choices', on_delete=models.CASCADE,
                              verbose_name='Вопрос')
 
     def __str__(self):

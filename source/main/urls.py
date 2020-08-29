@@ -20,5 +20,6 @@ from webapp.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',  IndexView.as_view(), name='index'),
+    path('poll/<int:pk>/', PollView.as_view(), name='poll_view'),
 
 ]

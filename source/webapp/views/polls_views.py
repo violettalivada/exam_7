@@ -15,3 +15,15 @@ class IndexView(ListView):
     def get_queryset(self):
         return Poll.objects.all().order_by('-created_at')
 
+
+class PollView(DetailView):
+    template_name = 'polls/view.html'
+    model = Poll
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        poll = self.object
+        choices = poll.choices.order_by('choice_text')
+        context['choices'] = choices
+        return context
+
