@@ -1,14 +1,6 @@
 [
 {
   "model": "webapp.poll",
-  "pk": 1,
-  "fields": {
-    "question": "\u0411\u0435\u0441\u0438\u0442?",
-    "created_at": "2020-08-29T06:15:13.219Z"
-  }
-},
-{
-  "model": "webapp.poll",
   "pk": 2,
   "fields": {
     "question": "\u0417\u0430\u0447\u0435\u043c \u043b\u044e\u0434\u0438 \u043e\u0442\u043a\u0440\u044b\u0432\u0430\u044e\u0442 \u0445\u043e\u043b\u043e\u0434\u0438\u043b\u044c\u043d\u0438\u043a?",
@@ -16,27 +8,43 @@
   }
 },
 {
-  "model": "webapp.choice",
-  "pk": 1,
-  "fields": {
-    "choice_text": "\u0414\u0430, \u0431\u0435\u0441\u0438\u0438\u0438\u0442!",
-    "poll": 1
-  }
-},
-{
-  "model": "webapp.choice",
-  "pk": 2,
-  "fields": {
-    "choice_text": "\u041d\u0435\u0442, \u0432\u0441\u0435 \u0447\u0438\u043a\u0438-\u043f\u0443\u043a\u0438:*",
-    "poll": 1
-  }
-},
-{
-  "model": "webapp.choice",
+  "model": "webapp.poll",
   "pk": 3,
   "fields": {
-    "choice_text": "\u0421\u043b\u0430\u0432\u0430 \u0423\u043a\u0440\u0430\u0438\u043d\u0435!",
-    "poll": 1
+    "question": "\u041f\u043e\u0447\u0435\u043c\u0443 \u044f\u0439\u0446\u0430 \u043a\u0443\u0440\u0438\u0446\u0443 \u043d\u0435 \u0443\u0447\u0430\u0442?",
+    "created_at": "2020-08-29T07:17:40.301Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 4,
+  "fields": {
+    "question": "\u041a\u0430\u043a \u043f\u043e\u0431\u0435\u0434\u0438\u0442\u044c \u0436\u0438\u0432\u043e\u0433\u043e \u0432\u0430\u043c\u043f\u0438\u0440\u0430?",
+    "created_at": "2020-08-29T07:18:19.752Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 6,
+  "fields": {
+    "question": "\u041a\u0430\u043a \u0438\u0437\u0432\u0435\u0441\u0442\u043d\u043e \u0443 \u043d\u043e\u0441\u043a\u0430 3 \u0441\u0442\u0430\u0434\u0438\u0438:\r\n1. \u0427\u0438\u0441\u0442\u044b\u0439 \u043d\u043e\u0441\u043e\u043a\r\n2. \u041d\u0435\u043c\u043d\u043e\u0433\u043e \u0432\u043e\u043d\u044f\u0435\u0442\r\n3.  ...",
+    "created_at": "2020-08-29T12:29:05.432Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 7,
+  "fields": {
+    "question": "\u041f\u0435\u0440\u0432\u044b\u0439 \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u043c\u043e\u0431\u0438\u043b\u044c ...",
+    "created_at": "2020-08-29T12:30:16.687Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 8,
+  "fields": {
+    "question": "\u041a\u0442\u043e \u043f\u0440\u043e\u0436\u0438\u0432\u0430\u0435\u0442 \u043d\u0430 \u0434\u043d\u0435 \u043e\u043a\u0435\u0430\u043d\u0430",
+    "created_at": "2020-08-29T12:32:02.961Z"
   }
 },
 {
@@ -53,6 +61,137 @@
   "fields": {
     "choice_text": "\u0427\u0442\u043e\u0431\u044b \u043f\u043e\u0434\u0443\u043c\u0430\u0442\u044c",
     "poll": 2
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 6,
+  "fields": {
+    "choice_text": "\u041f\u043e\u0437\u0432\u043e\u043d\u0438\u0442\u044c \u0438\u043d\u043a\u0432\u0438\u0437\u0438\u0442\u043e\u0440\u0430\u043c!",
+    "poll": 4
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 9,
+  "fields": {
+    "choice_text": "\u0414\u0430\u0442\u044c \u0437\u0430\u043a\u0443\u0440\u0438\u0442\u044c \u0447\u0435\u0441\u043d\u043e\u0447\u043d\u043e\u0433\u043e \u0442\u0430\u0431\u0430\u043a\u0430!",
+    "poll": 4
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 10,
+  "fields": {
+    "choice_text": "\u041a\u0438\u043d\u0443\u0442\u044c \u0432 \u043d\u0435\u0433\u043e \u0440\u0443\u0441\u0430\u043b\u043a\u0443...",
+    "poll": 4
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 11,
+  "fields": {
+    "choice_text": "\u0423\u043a\u0443\u0441\u0438\u0442\u044c \u0435\u0433\u043e \u043f\u0435\u0440\u0432\u044b\u043c!!!",
+    "poll": 4
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 12,
+  "fields": {
+    "choice_text": "\u0428\u043a\u043e\u043b\u044b \u043d\u0435\u0442 \u0443 \u043a\u0443\u0440...",
+    "poll": 3
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 13,
+  "fields": {
+    "choice_text": "\u041e\u043d\u0438 \u0433\u043e\u0432\u043e\u0440\u0438\u0442\u044c \u043d\u0435 \u0443\u043c\u0435\u044e\u0442...",
+    "poll": 3
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 14,
+  "fields": {
+    "choice_text": "\u041d\u043e\u0441\u043a\u0430 \u043d\u0435\u0442, \u0430 \u0437\u0430\u043f\u0430\u0445 \u0435\u0441\u0442\u044c....",
+    "poll": 6
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 15,
+  "fields": {
+    "choice_text": "\u041d\u043e\u0441\u043e\u043a \u043f\u0440\u044b\u0433\u0430\u0435\u0442, \u0447\u0442\u043e\u0431\u044b \u043f\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u0442\u044c \u0432 \u0433\u043b\u0430\u0437\u0430 \u044d\u0442\u043e\u043c\u0443 \u0433\u0430\u0434\u0443, \u043a\u043e\u0442\u043e\u0440\u044b\u0439 \u0435\u0433\u043e \u043d\u0435 \u0441\u0442\u0438\u0440\u0430\u0435\u0442!!!",
+    "poll": 6
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 16,
+  "fields": {
+    "choice_text": "\u0410\u0432\u0442\u043e\u0431\u0443\u0441 \u0441 \u0440\u043e\u0433\u0430\u043c\u0438",
+    "poll": 7
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 17,
+  "fields": {
+    "choice_text": "\u0424\u043e\u0440\u0434 \u0431\u043b\u0430 \u0431\u043b\u0430 \u0431\u043b\u0430 \u0431\u043b\u0430",
+    "poll": 7
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 18,
+  "fields": {
+    "choice_text": "\u0414\u0440\u0435\u0432\u043d\u044f\u044f \u043c\u0430\u0448\u0438\u043d\u0430 \u0420\u0430\u043d\u0434\u0438\u0433\u0441\u0438\u043d\u0430, \u0440\u0430\u0431\u043e\u0442\u0430\u044e\u0449\u0430\u044f \u0432 \u0433\u0440\u043e\u0437\u0443, \u0431\u043b\u0430\u0433\u043e\u0434\u0430\u0440\u044f \u0445\u043e\u043c\u044f\u043a\u0430\u043c-\u044d\u043d\u0435\u0440\u0434\u0436\u0430\u0439\u0437\u0435\u0440\u0430\u043c:D",
+    "poll": 7
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 19,
+  "fields": {
+    "choice_text": "\u0421\u043f\u0430\u043d\u0447 \u0431\u043e\u0431",
+    "poll": 8
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 20,
+  "fields": {
+    "choice_text": "\u0421\u041f\u0410\u041d\u0427 \u0411\u041e\u0411 \u0421\u041a\u0412\u0415\u042f \u041f\u0415\u041d\u0422\u0421!!!!!!!!!!!!!!!!!!!!1",
+    "poll": 8
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 1,
+  "fields": {
+    "poll": 4,
+    "created_at": "2020-08-29T11:38:05.125Z",
+    "choice": 4
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 2,
+  "fields": {
+    "poll": 4,
+    "created_at": "2020-08-29T11:57:35.766Z",
+    "choice": 6
+  }
+},
+{
+  "model": "webapp.answer",
+  "pk": 3,
+  "fields": {
+    "poll": 2,
+    "created_at": "2020-08-29T12:26:00.648Z",
+    "choice": 4
   }
 },
 {
