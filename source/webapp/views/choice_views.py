@@ -1,5 +1,5 @@
 from django.shortcuts import get_object_or_404, redirect
-from django.urls import reverse
+from django.urls import reverse, reverse_lazy
 from django.views.generic import CreateView, UpdateView, DeleteView
 
 from webapp.models import Poll, Choice
@@ -26,3 +26,11 @@ class ChoiceUpdateView(UpdateView):
 
     def get_success_url(self):
         return reverse('poll_view', kwargs={'pk': self.object.poll.pk})
+
+
+class ChoiceDeleteView(DeleteView):
+    template_name = 'choices/delete.html'
+    model = Choice
+    context_object_name = 'choice'
+    success_url = reverse_lazy('index')
+
