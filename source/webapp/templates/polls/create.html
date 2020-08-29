@@ -1,0 +1,9 @@
+{% extends "partial/../base.html" %}
+
+{% block title %}Create{% endblock %}
+
+{% block content %}
+    <h1>Создать опрос</h1>
+        {% url "poll_create"  as action_url %}
+        {% include 'partial/form.html' with button_text='Создать' action_url=action_url form_method='post' %}
+{% endblock %}
