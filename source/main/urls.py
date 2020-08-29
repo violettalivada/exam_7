@@ -23,4 +23,5 @@ urlpatterns = [
     path('poll/<int:pk>/', PollView.as_view(), name='poll_view'),
     path('polls/add/', PollCreateView.as_view(), name='poll_create'),
     path('poll/<int:pk>/update/', PollUpdateView.as_view(), name='poll_update'),
+    path('poll/<int:pk>/delete/', PollDeleteView.as_view(), name='poll_delete'),
 ]
