@@ -1,0 +1,23 @@
+{% extends 'partial/../base.html' %}
+
+{% block title %}Questionnaire{% endblock %}
+
+{% block content %}
+    <div class="title mt-5 pb-4" style="text-align: center"><h1>Добро пожаловать в опросник!</h1></div>
+     {% if is_paginated %}
+        {% include 'partial/pagination.html' %}
+     {% endif %}
+        {% for poll in polls %}
+        <div class="card-deck">
+            <div class="card mb-2 text-center">
+                <div class="card-body">
+                    <h5 class="card-title"> {{ poll.question }}</h5>
+                    <p class="card-text">Дата создания: {{ poll.created_at }}</p>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+     {% if is_paginated %}
+        {% include 'partial/pagination.html' %}
+    {% endif %}
+{% endblock %}
