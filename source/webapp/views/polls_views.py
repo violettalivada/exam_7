@@ -37,3 +37,12 @@ class PollCreateView(CreateView):
     def get_success_url(self):
         return reverse('poll_view', kwargs={'pk': self.object.pk})
 
+
+class PollUpdateView(UpdateView):
+    model = Poll
+    template_name = 'polls/update.html'
+    form_class = PollForm
+    context_key = 'poll'
+
+    def get_success_url(self):
+        return reverse('poll_view', kwargs={'pk': self.object.pk})

@@ -21,5 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',  IndexView.as_view(), name='index'),
     path('poll/<int:pk>/', PollView.as_view(), name='poll_view'),
-    path('polls/add/', PollCreateView.as_view(), name='poll_create')
+    path('polls/add/', PollCreateView.as_view(), name='poll_create'),
+    path('poll/<int:pk>/update/', PollUpdateView.as_view(), name='poll_update'),
 ]
